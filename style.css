@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100&family=VT323&display=swap');
+
+*{
+    margin: 0;
+}
+a{
+    color: rgb(197, 207, 130);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 26, 26);
+}
+.container{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.cardLeft, .cardRight{
+    color: white;
+    justify-content: inherit;
+    padding: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    font-family: 'roboto';
+    padding: inherit;
+    box-shadow: inset 0 0 2em 0.5rem rgba(255, 255, 255, 0.041);
+    border-radius: 1em;
+    padding: inherit;
+    translate: 3d;
+    letter-spacing: 0.1rem;
+}
+
+.cardLeft>h1{
+    font-size: 2em;
+}
+.cardLeft>p{
+    width: 100%;
+    white-space: normal;
+    font-size: 1em;
+    text-align: justify;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#login{
+    background-color:yellow;
+    color: black;
+    border-radius: 1rem;
+    font-family: 'roboto';
+    font-weight: 800;
+    font-size: 1em;
+    cursor: pointer;
+}
+#login:hover{
+    background-color:rgb(186, 211, 21);
+}
+
+.passwordContainer{
+    display: flex;
+    flex-direction: row;
+}
+span{
+    color: black;
+    z-index: 1;
+    margin-left: -1.20em;
+}
+
+@media screen and (max-width: 770px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardLeft{
+        width:100%;
+    }
+}
